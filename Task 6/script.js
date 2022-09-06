@@ -25,4 +25,4 @@ const getUserAverageAge =
 
 console.log(getUserAverageAge);
 
-const getUsersNames = users.concat(users.name);
+// const getUsersNames = users.concat(users.name);
