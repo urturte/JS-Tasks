@@ -24,5 +24,7 @@ class Movie {
     };
   }
 }
-const Tenet = new Movie("Tenet", "Christopher Nolan", 1000000);
+const Tenet = new Movie("Tenet", "Christopher Nolan", 10);
+const It = new Movie("It", "Andy Muschietti", 9999999999999);
 Tenet.wasExpensive();
+It.wasExpensive();

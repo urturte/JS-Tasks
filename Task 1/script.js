@@ -9,8 +9,8 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
 
-document.getElementById("submit-btn").addEventListener("click", (event) => {
-  event.preventDefault();
+document.getElementById("submit-btn").addEventListener("click", () => {
+  // event.preventDefault();
 
   //   calculating value
   const userInput = document.getElementById("search").value;
@@ -27,6 +27,9 @@ document.getElementById("submit-btn").addEventListener("click", (event) => {
 
   //   styles
   values.style.display = "flex";
+  values.style.backgroundColor = "white";
+  values.style.padding = "1rem";
+  values.style.borderRadius = "5px";
   values.style.width = "50rem";
   values.style.margin = "auto";
   values.style.justifyContent = "space-between";
@@ -42,8 +45,8 @@ document.getElementById("submit-btn").addEventListener("click", (event) => {
   ozOutput.textContent = ozValue + "oz";
 
   //   append
+
   const output = document.getElementById("output");
-  console.log(values);
   values.append(kgOutput, lbOutput, gOutput, ozOutput);
   output.append(values);
 });

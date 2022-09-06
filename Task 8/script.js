@@ -14,9 +14,9 @@ function Calculator(n1, n2) {
   this.print = function () {
     console.log(
       `  ${this.sum} - suma 
-         ${this.sub} - skirtumas 
-         ${this.multi} - skirtumas 
-         ${this.div} - skirtumas`
+  ${this.sub} - skirtumas 
+  ${this.multi} - daugyba 
+  ${this.div} - dalyba`
     );
   };
 }
