@@ -43,6 +43,8 @@ document.getElementById("btn").addEventListener("click", () => {
 
         const output = document.getElementById("output");
         output.append(container);
+        const element = document.getElementById("message");
+        element.style.display = "none";
       });
     });
 });
